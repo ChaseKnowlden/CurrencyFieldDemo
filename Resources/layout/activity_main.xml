@@ -1,0 +1,28 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <io.sulek.currencyfield.CurrencyField
+        android:id="@+id/text_field"
+        android:layout_centerInParent="true"
+        app:attrCurrencyCode="USD"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Enter Value"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_get_value"
+        android:layout_below="@+id/text_field"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:text="GET VALUE"/>
+
+</RelativeLayout>
